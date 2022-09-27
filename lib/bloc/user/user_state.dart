@@ -7,3 +7,7 @@ abstract class UserState {
 
   const UserState({this.existUser = false, this.user});
 }
+
+class UserInitialState extends UserState {
+  const UserInitialState() : super(existUser: false, user: null);
+}
